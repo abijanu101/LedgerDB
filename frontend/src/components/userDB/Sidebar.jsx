@@ -16,11 +16,11 @@ function Sidebar() {
     const { dbID } = useParams();
     return (
         <>
-                <aside className="w-75 h-screen bg-gradient-to-br from-cyan-900 to-teal-800 shadow-xs shadow-blue-900 flex flex-col justify-between">
+                <aside className="w-80 h-screen bg-gradient-to-br from-cyan-900 to-teal-800 shadow-xs shadow-blue-900 flex flex-col justify-between">
                     <div className="flex-1">
-                        <div className="p-5 flex justify-start gap-5 align-middle active:bg-teal-700 cursor-pointer">
-                            <img src="/Logo.png" className=" h-10" />
-                            <img src="/LedgerDB.png" className="h-9 mt-1.5" />
+                        <div className="p-5 mb-5 flex justify-start gap-5 align-middle active:bg-teal-700 cursor-pointer">
+                            <img src="/Logo.png" className=" h-7" />
+                            <img src="/LedgerDB.png" className="h-8 mt-1.5 shrink" />
                         </div>
                         <ul className="font-thin text-2xl pr-2 flex flex-col gap-1">
                             <SidebarItem icon={<FaBoxOpen className='mt-1' />} text='Products' link={'/db/' + dbID + '/products'} />
