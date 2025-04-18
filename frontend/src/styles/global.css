@@ -1,0 +1,38 @@
+/* src/styles/global.css */
+:root {
+    --primary: #0F172A; /* Midnight Blue */
+    --secondary: #1E293B; /* Slate Gray */
+    --background: #F1F5F9; /* Light Slate */
+    --accent: #10B981; /* Soft Teal */
+    --warning: #F59E0B; /* Warm Amber */
+    --danger: #EF4444; /* Rose Red */
+    --info: #38BDF8; /* Sky Blue */
+    --text-primary: #0F172A; /* Dark Charcoal */
+    --text-secondary: #64748B; /* Cool Gray */
+  }
+  
+  /* CSS Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background);
+    color: var(--text-primary);
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--info);
+  }
+  
+  a:hover {
+    color: #0EA5E9;
+  }
+  
+  ul {
+    list-style: none;
+  }
