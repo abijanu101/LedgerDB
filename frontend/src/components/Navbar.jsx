@@ -126,6 +126,7 @@ const Navbar = ({ userRole = 'owner' }) => {
         </li>
         <li className="navbar-item navbar-user">
           <img src="/user.png" alt="User" />
+          user
           <ul className="navbar-dropdown">
             {filterByRole(userItems).map((item) => (
               <li key={item.name}>
