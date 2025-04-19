@@ -33,3 +33,16 @@ app.get('/:id', (req, res) => {
 app.listen(process.env.PORT, () => {
     console.log(`Listening at Port ${process.env.PORT}`);
 });
+
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './index.css';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
