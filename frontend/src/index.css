@@ -1,92 +1,85 @@
-/* src/styles/index.css */
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+/* for login page */
+.bg {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to top, #e0f0ff, #ffffff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
 
-  /* for login page */
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to top, #e0f0ff, #ffffff);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  /* Blue wave at the bottom */
-  body::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 300px;
-    background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1440 320' xmlns='http://www.w3.org/2000/svg'><path fill='%23006DFF' fill-opacity='1' d='M0,224L80,202.7C160,181,320,139,480,149.3C640,160,800,224,960,250.7C1120,277,1280,267,1360,261.3L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z'></path></svg>") no-repeat bottom;
-    background-size: cover;
-    z-index: 0;
-  }
-  
-  /* Form container */
-  .form-container {
-    position: relative;
-    z-index: 1;
-    background-color: white;
-    padding: 2.5rem 2rem;
-    border-radius: 15px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    width: 340px;
-    text-align: center;
-  }
-  
-  .form-container h1 {
-    margin-bottom: 1.5rem;
-    color: #045dbf;
-  }
-  
-  .form-container label {
-    display: block;
-    text-align: left;
-    margin-top: 1rem;
-    font-weight: bold;
-    color: #045dbf;
-  }
-  
-  .form-container input {
-    width: 100%;
-    padding: 0.6rem;
-    margin-top: 0.4rem;
-    border: 1px solid #cde0ff;
-    border-radius: 8px;
-    background-color: #f0f6ff;
-  }
-  
-  .form-container button[type="submit"] {
-    margin-top: 1.5rem;
-    width: 100%;
-    padding: 0.7rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .form-container p {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-  }
-  
-  .form-container p button {
-    background: none;
-    border: none;
-    color: #045dbf;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  
+/* Blue wave at the bottom */
+.bg::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1440 320' xmlns='http://www.w3.org/2000/svg'><path fill='%23006DFF' fill-opacity='1' d='M0,224L80,202.7C160,181,320,139,480,149.3C640,160,800,224,960,250.7C1120,277,1280,267,1360,261.3L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z'></path></svg>") no-repeat bottom;
+  background-size: cover;
+  z-index: 0;
+}
+
+/* Form container */
+.form-container {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  width: 340px;
+  text-align: center;
+}
+
+.form-container h1 {
+  margin-bottom: 1.5rem;
+  color: #045dbf;
+}
+
+.form-container label {
+  display: block;
+  text-align: left;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #045dbf;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.4rem;
+  border: 1px solid #cde0ff;
+  border-radius: 8px;
+  background-color: #f0f6ff;
+}
+
+.form-container button[type="submit"] {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-container p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.form-container p button {
+  background: none;
+  border: none;
+  color: #045dbf;
+  text-decoration: underline;
+  cursor: pointer;
+}

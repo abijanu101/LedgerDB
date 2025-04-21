@@ -1,9 +1,7 @@
+import AuthForm from './AuthForm';
+
 function SignUp() {
-    return (
-        <>
-            Sign!???!?@
-        </>
-        );
+  return <AuthForm isSignup={true} />;
 }
 
 export default SignUp;
